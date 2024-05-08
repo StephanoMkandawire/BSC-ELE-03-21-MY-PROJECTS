@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "d:/ELECTRONICS/2ND SEM/COM221/BSC-ELE-03-21-MY-PROJECTS/LAB-8/Classes/Exercise-3",
+      "program": "d:/ELECTRONICS/2ND SEM/COM221/BSC-ELE-03-21-MY-PROJECTS/LAB-8/Classes/Exercise-3/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
