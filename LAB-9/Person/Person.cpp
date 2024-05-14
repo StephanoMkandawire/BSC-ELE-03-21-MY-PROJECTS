@@ -68,3 +68,20 @@ Person::~Person() {
         bool Person::operator>(const Person& otherPerson) const {
             return mAge > otherPerson.mAge;
         }
+
+        void Person::SetjaneFirstName(string fisrtName){
+            mFirstName = fisrtName;
+        }
+        string Person::getJaneFirstName()const{
+            return mFirstName;
+        }
+
+        string Person::operator=(const Person& janeFirstName)const{
+            return mFirstName;
+        }
+        void Person::setJaneAge(int age){
+            mAge = age;
+        }
+        int Person::getJaneAge()const{
+            return mAge;
+        }

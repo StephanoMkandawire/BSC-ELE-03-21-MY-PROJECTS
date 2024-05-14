@@ -21,13 +21,14 @@ int main()
         cout << "\nEnter columns from 1 to 3: ";
         cin >> columns;
     }
-
+    //two dimessions allay.
     int** array;
     array = new int*[rows];
     for (int i = 0; i < rows; i++)
     {
         array[i] = new int[columns];
     }
+
     // filling the values of an array.
     for (int i = 0; i < rows; i++)
     {
@@ -36,6 +37,7 @@ int main()
             array[i][j] = 10 + i;
         }
     }
+    
     // Printing the array on the screen.
     for (int i = 0; i < rows; i++)
     {

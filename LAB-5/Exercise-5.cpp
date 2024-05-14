@@ -5,9 +5,9 @@
 using namespace std;
 
 // Function prototypes
-double squareFn(double);
-double rectangleFn(double, double);
-double triangleFn(double, double);
+double squareFn(double&);
+double rectangleFn(double&, double&);
+double triangleFn(double&, double&);
 
 int main() 
 {
@@ -71,14 +71,14 @@ int main()
 }
 
 //FUNCTION DIFINITIONS.
-double squareFn(double valueA) {
+double squareFn(double& valueA) {
     return valueA * valueA;
 }
 
-double rectangleFn(double length, double width) {
+double rectangleFn(double& length, double& width) {
     return length * width;
 }
 
-double triangleFn(double base, double height) {
+double triangleFn(double& base, double& height) {
     return (0.5) * base * height;
 }
