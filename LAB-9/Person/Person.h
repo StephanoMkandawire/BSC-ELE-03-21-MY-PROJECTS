@@ -33,6 +33,12 @@ public:
     bool operator>(const Person& otherPerson) const;
 
     operator int()const;
+            void SetjaneFirstName(string fisrtName);
+        string getJaneFirstName()const;
+
+        void setJaneAge(int age);
+        int Person::getJaneAge()const;
+        string operator=(const Person& janeFirstName)const;
 
 private:
     float mWeight; // Weight of the person
