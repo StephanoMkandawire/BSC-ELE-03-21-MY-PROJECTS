@@ -1,4 +1,6 @@
-#include<iostream>
+#include <iostream>
+#include <cstdlib>
+#include <iomanip> 
 using namespace std;
 
 int main()
@@ -7,10 +9,10 @@ int main()
     int columns;
 
     // Dynamically allocation
-    cout<<"Enter rows from 1 to 3: ";
-    cin>>rows;
-    cout<<"Enter columns from 1 to 3: ";
-    cin>>columns;
+    cout << "Enter rows from 1 to 3: ";
+    cin >> rows;
+    cout << "Enter columns from 1 to 3: ";
+    cin >> columns;
 
     // Check if rows and columns are within the allowed range
     while ((rows < 1 || rows > 3) || (columns < 1 || columns > 3))
@@ -21,6 +23,7 @@ int main()
         cout << "\nEnter columns from 1 to 3: ";
         cin >> columns;
     }
+
     //two dimessions allay.
     int** array;
     array = new int*[rows];
@@ -37,22 +40,23 @@ int main()
             array[i][j] = 10 + i;
         }
     }
-    
+
     // Printing the array on the screen.
     for (int i = 0; i < rows; i++)
     {
         for (int j = 0; j < columns; j++)
         {
-            cout << array[i][j] << " ";
+            cout << setw(3) << array[i][j] << " ";
         }
         cout << endl;
     }
+
     // Deallocating memory
     for (int i = 0; i < rows; i++)
     {
         delete[] array[i];
     }
-    delete [] array;
+    delete[] array;
 
     return 0;
 }
